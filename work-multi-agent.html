@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="竞技战术推演与心理干预 Multi-Agent 原型案例：双流程设计、结构化知识与公网交互原型。">
+  <title>Multi-Agent 战术与心理原型｜王一鸣</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">WANG<span>.</span>YIMING</a>
+      <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="work-middle-east.html">核心案例</a>
+        <a href="work-multi-agent.html" aria-current="page">AI 原型</a>
+        <a href="about.html">关于我</a>
+        <a class="nav-cta" href="assets/resume.pdf">下载简历</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="container">
+        <span class="eyebrow">Case Study 02 · Applied AI Prototype</span>
+        <h1>竞技战术推演与心理干预 Multi-Agent 原型</h1>
+        <p class="lead">把训练中的战术知识转成比赛现场可执行的判断与动作，同时用独立流程处理临场心理调节。</p>
+        <div class="case-kpis">
+          <div><strong>2 条流程</strong><span>战术分析 + 心理调节</span></div>
+          <div><strong>1 套知识库</strong><span>结构化力学与战术资料</span></div>
+          <div><strong>3 类参数</strong><span>落点、动作、板形角度</span></div>
+          <div><strong>1 个原型</strong><span>公网可交互</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container case-layout">
+      <aside class="toc" aria-label="案例目录">
+        <a href="#problem">问题</a>
+        <a href="#insight">产品判断</a>
+        <a href="#solution">方案</a>
+        <a href="#demo">原型</a>
+        <a href="#learning">复盘</a>
+      </aside>
+
+      <article class="case-content">
+        <section class="case-section reveal" id="problem">
+          <span class="eyebrow">01 · Problem</span>
+          <h2>高压比赛里，运动员需要的不是一段泛泛建议，而是能立刻执行的动作。</h2>
+          <p>训练中讲过的力学和战术要点经常在比赛场景中失效。直接询问通用 AI，回答通常停留在概念层面，无法说明具体落点、接发动作和板形角度，也很难同时处理战术分析和心理状态。</p>
+        </section>
+
+        <section class="case-section reveal" id="insight">
+          <span class="eyebrow">02 · Product Judgment</span>
+          <h2>一个模型不能同时负责客观力学判断和主观情绪调节。</h2>
+          <div class="insight-grid">
+            <div class="insight"><span>用户需求</span><h3>需要可执行</h3><p>建议必须落到动作、方向和力度，而不是“要更专注”这类无法执行的表达。</p></div>
+            <div class="insight"><span>能力边界</span><h3>需要可约束</h3><p>通过结构化知识库限制回答范围，避免模型自由发挥专业内容。</p></div>
+            <div class="insight"><span>任务拆分</span><h3>需要双流程</h3><p>战术分析解决“怎么打”，心理调节解决“如何保持稳定”。</p></div>
+          </div>
+        </section>
+
+        <section class="case-section reveal" id="solution">
+          <span class="eyebrow">03 · Solution</span>
+          <h2>把抽象经验转成可复用的决策结构。</h2>
+          <div class="flow">
+            <div class="flow-box"><b>01</b><span>识别对手与球路特征</span></div>
+            <div class="flow-box"><b>02</b><span>查询结构化力学知识</span></div>
+            <div class="flow-box"><b>03</b><span>生成战术与动作参数</span></div>
+            <div class="flow-box"><b>04</b><span>独立处理临场心理状态</span></div>
+            <div class="flow-box"><b>05</b><span>输出可执行步骤</span></div>
+          </div>
+          <div class="callout">
+            <strong>人机分工</strong>
+            <p>人负责定义战术知识、输出边界和高风险判断；AI 负责组织资料、生成结构化建议、提供步骤化提示。</p>
+          </div>
+        </section>
+
+        <section class="case-section reveal" id="demo">
+          <span class="eyebrow">04 · Prototype</span>
+          <h2>从知识整理到公网交互，完成一次完整的产品原型验证。</h2>
+          <div class="mockup">
+            <div class="mockup-top"><i></i><i></i><i></i></div>
+            <div class="mockup-body">
+              <div class="panel">
+                <h3>输入场景</h3>
+                <div class="list">
+                  <div><span>对手段位</span><strong>高水平快攻</strong></div>
+                  <div><span>当前问题</span><strong>接发球不稳定</strong></div>
+                  <div><span>心理状态</span><strong>比分落后</strong></div>
+                </div>
+              </div>
+              <div class="panel">
+                <h3>可执行输出</h3>
+                <div class="list">
+                  <div><span>战术</span><strong>压反手后转正手</strong></div>
+                  <div><span>动作</span><strong>提前引拍 / 控制板形</strong></div>
+                  <div><span>心理提示</span><strong>呼吸锚定 + 下一分规则</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="https://wangym162267-gif.github.io/tactics-ai-demo">打开公网原型</a>
+            <button class="button secondary copy-email" type="button" data-email="13808093508@163.com">复制邮箱</button>
+          </div>
+        </section>
+
+        <section class="case-section reveal" id="learning">
+          <span class="eyebrow">05 · Reflection</span>
+          <h2>原型让我理解了 AI 产品最重要的边界：哪些交给模型，哪些必须由人负责。</h2>
+          <p>这个项目验证了从用户问题、任务拆分、结构化知识到可交互原型的完整过程。下一阶段需要补充更系统的使用反馈和效果评测，验证建议是否真的改善了训练与比赛决策。</p>
+          <div class="hero-actions"><a class="button secondary" href="work-middle-east.html">返回核心案例</a></div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span data-year>2026</span> 王一鸣 · AI 产品经理作品集</div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
